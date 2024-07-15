@@ -9,7 +9,7 @@ const CatImage = forwardRef((props, ref) => {
     const fetchImage = async () => {
         try {
             const imageUrl = await fetchCatImage();
-            setImage(imageUrl);
+            setImage(`${imageUrl}?t=${new Date().getTime()}`);
         } catch (error) {
             console.error('Error fetching cat image:', error);
         }
