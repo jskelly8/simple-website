@@ -1,0 +1,23 @@
+{
+    "name": "simple-website",
+    "version": "1.0.0",
+    "description": "",
+    "main": "server/manage.py",
+    "scripts": {
+        "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+        "start:prod": "cd server && npm start",
+        "start:dev": "concurrently \"cd server && python manage.py runserver\" \"cd client && npm run dev\"",
+        "install": "cd server && pip install -r requirements.txt && cd ../client && npm install",
+        "build": "cd client && npm run build"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "if-env": "^1.0.4",
+        "uuid": "^9.0.1"
+    },
+    "devDependencies": {
+        "concurrently": "^7.0.0"
+    }
+}

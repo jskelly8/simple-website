@@ -1,0 +1,137 @@
+/* Reset some default browser styles */
+body,
+h1,
+h2,
+p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e0f7fa;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+/* Container styles */
+.container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    position: relative;
+}
+
+/* Heading styles */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #00796b;
+}
+
+/* Content container styles */
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+/* Image container styles */
+.image-container {
+    flex: 1;
+    max-width: 50%;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-container h2 {
+    color: #004d40;
+}
+
+.image-container img {
+    width: 100%;
+    max-height: 300px;
+    height: 300px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* Fact container styles */
+.fact-container {
+    flex: 1;
+    max-width: 50%;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.fact-container h2 {
+    color: #004d40;
+}
+
+/* Button styles */
+button {
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    background-color: #00796b;
+    color: #ffffff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+button:hover {
+    background-color: #004d40;
+}
+
+/* Responsive styles */
+@media (max-width: 767px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-container {
+        max-width: 100%;
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .fact-container {
+        max-width: 100%;
+        padding-left: 0;
+    }
+
+    button {
+        position: static;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        transform: none;
+    }
+}
