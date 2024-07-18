@@ -1,7 +1,12 @@
 # simple-website
 
 ## Description
-Simple-Website is a basic web application showcasing the integration of a React frontend with a Django backend. The application is designed to demonstrate the deployment of a full-stack application on AWS, utilizing various AWS services for hosting, storage, and distribution.
+This project is a simple, cat-themed website that displays a random cat image and a random cat fact. The website is built using React.js for the frontend and Django (with 2 api endpoints) for the backend. The frontend is deployed on AWS S3, and the backend is deployed on AWS EC2. The site adapts to different screen sizes, ensuring a user-friendly experience on both desktop and mobile devices.
+
+- Displays a random cat image.
+- Displays a random cat fact.
+- Refresh button to fetch new cat image and fact.
+- Responsive design that adapts to different screen sizes.
 
 ## Table of Contents
 
@@ -10,6 +15,7 @@ Simple-Website is a basic web application showcasing the integration of a React 
 - [Deployment](#deployment)
 - [Badges](#badges)
 - [Features](#features)
+- [Screenshots](#screenshots)
 - [Questions](#questions)
 
 ## Installation
@@ -47,6 +53,10 @@ To visit the deployed application, click the following logo:
 - Django backend
 - Integration with AWS services
 
+### API Endpoints
+- **GET** `/api/catfact/` - Fetches a random cat fact from an external API and returns it.
+- **GET** `/api/catimage/` - Fetches a random cat image URL and returns it.
+
 ## Deployment
 
 The application is deployed on AWS using the following services:
@@ -72,6 +82,7 @@ The application is deployed on AWS using the following services:
 ## Features
 
 - **React** for building user interfaces
+- **Python** for developing the server-side logic
 - **Django** for the backend
 - **Nginx** as a reverse proxy
 - **Gunicorn** as the WSGI HTTP server
@@ -79,6 +90,14 @@ The application is deployed on AWS using the following services:
 - **AWS S3** for storing static and media files
 - **AWS CloudFront** for CDN
 - **GitHub** for version control
+
+## Screenshots
+
+![Desktop View](./client/public/SimpleWebsiteDesktop.png)
+*Desktop view of the website*
+
+![Mobile View](./client/public/SimpleWebsiteMobile.png)
+*Mobile view of the website*
 
 ## Questions
 
